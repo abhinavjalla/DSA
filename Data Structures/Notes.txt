@@ -25,4 +25,41 @@
      sum(j) - sum(i) = k module equal sides by k
      sum(j) % k - sum(i) % k = k % k
      sum(j) % k = sum(i)% k + 0
+     sum(j) % k (mod) should be key in map. value will be index if position is requirement else count will be value
+
+
+
+2 Two Pointers
+
+
+    Basic Steps to start:
+
+    * sorted Array predominantly but not mandatory.
+    * initialize pointers at start and last if array sorted.
+    * move pointer left ahead forward or right pointer backward as per requirement satisfied.
+
+
+
+3 Sliding Window 
+
+
+    Basic Steps to start:
+
+    * subarray or contagious or subsequent
+    * two types sliding window fixed length or dynamic.
+    * fixed length make sure window is always of fixed length(K) as given by problem
+    * for dynamic window length is expanded and shrieked till the requirement is satisfied.
+
+4 Fast Slow Pointer
+    * intialize slow and fast pointer at start
+    * move slow pointer one step and fast pointer 2 steps
+    * In linked List if both pointers meet their exist a cycle
+    * To find start point of cycle after both pointer meet reassign slow pointer to head and make slow and fast pointer move one step ahead. where both meet is the start pointers
+
+5 LinkedList In-place Reversal
+    * To reverse linked list of given positions. take a dummy node and point dummy.next to head
+    * Store the element before left position. always make sure to have tempPrevious = null, current and next for any reversal
+    * Implement normal linked list reversal logic
+    * after loop completion Assign prevleft.next = prev and prevleft.next.next = curr
+   
   
