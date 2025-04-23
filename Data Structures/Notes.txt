@@ -38,10 +38,7 @@
     * initialize pointers at start and last if array sorted.
     * move pointer left ahead forward or right pointer backward as per requirement satisfied.
 
-
-
 3 Sliding Window 
-
 
     Basic Steps to start:
 
@@ -61,5 +58,10 @@
     * Store the element before left position. always make sure to have tempPrevious = null, current and next for any reversal
     * Implement normal linked list reversal logic
     * after loop completion Assign prevleft.next = prev and prevleft.next.next = curr
-   
-  
+
+6 Monotonic Stack
+    * Two types of stack
+            - Increasing -> lower in bottom and keep on increase top
+            - Decreasing -> higher in bottom and keep decrease on top
+    * To find Largeres use decreasing monotinic stack and viceversa
+    * while poping elements from stack store it in map. current element is key of map and value will poppped element from stack
