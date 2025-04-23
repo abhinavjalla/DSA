@@ -1,0 +1,28 @@
+1. Prefix Sum
+
+    Basic Steps to start Prefix sum:
+      * SubArray or Contagious or subsequent;
+      * Create a Map for occerence or count or moduleo
+      * By default set map (0,-1) for index and (0,1) for counts
+
+  1.  input array = [1, 2, 3, 4, 5, 6] 
+      prefix sum array [1,3,6,10,15,21]
+      i = 2 j = 4 => sum(4)-sum(2) => 15 - 6 = 9 => input array[i+1 ...j] = input array[3] + input array[4] = 9
+
+
+      sum(j) - sum(i) = sum(i+1.....j elements) 
+      sum(j) = running sum or current sum
+      sum(i) = Any point before j
+
+  2. If k = target_sum
+      sum(j) - sum(i) = k
+      sum(j) - k = sum(i);
+      sum(i)(diff of current sum - targer sum) should be key in a Map. value will be index if position is requirment else count will be value
+
+
+
+  3. check k divisibility 
+     sum(j) - sum(i) = k module equal sides by k
+     sum(j) % k - sum(i) % k = k % k
+     sum(j) % k = sum(i)% k + 0
+  
