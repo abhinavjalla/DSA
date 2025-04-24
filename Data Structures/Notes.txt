@@ -1,3 +1,4 @@
+For Sorting and Searching to find pivot use Math.floor
 1. Prefix Sum
 
     Basic Steps to start Prefix sum:
