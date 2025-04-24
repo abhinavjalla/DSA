@@ -65,3 +65,6 @@
             - Decreasing -> higher in bottom and keep decrease on top
     * To find Largest use decreasing monotinic stack and viceversa
     * while poping elements from stack store it in map. current element is key of map and value will poppped element from stack
+    * To find histogram rectangle we need right most small element than current and left most smaller than current and insert last element as zero
+    * To find area of histogram calculate width = rightIdx - leftIdx -1 because actual rectangle lies between rightIdx and leftIdx ending point
+    
