@@ -30,7 +30,7 @@ For Sorting and Searching to find pivot use Math.floor
 
 
 
-2 Two Pointers
+2. Two Pointers
 
 
     Basic Steps to start:
@@ -39,7 +39,7 @@ For Sorting and Searching to find pivot use Math.floor
     * initialize pointers at start and last if array sorted.
     * move pointer left ahead forward or right pointer backward as per requirement satisfied.
 
-3 Sliding Window 
+3. Sliding Window 
 
     Basic Steps to start:
 
@@ -48,19 +48,19 @@ For Sorting and Searching to find pivot use Math.floor
     * fixed length make sure window is always of fixed length(K) as given by problem
     * for dynamic window length is expanded and shrieked till the requirement is satisfied.
 
-4 Fast Slow Pointer
+4. Fast Slow Pointer
     * intialize slow and fast pointer at start
     * move slow pointer one step and fast pointer 2 steps
     * In linked List if both pointers meet their exist a cycle
     * To find start point of cycle after both pointer meet reassign slow pointer to head and make slow and fast pointer move one step ahead. where both meet is the start pointers
 
-5 LinkedList In-place Reversal
+5. LinkedList In-place Reversal
     * To reverse linked list of given positions. take a dummy node and point dummy.next to head
     * Store the element before left position. always make sure to have tempPrevious = null, current and next for any reversal
     * Implement normal linked list reversal logic
     * after loop completion Assign prevleft.next = prev and prevleft.next.next = curr
 
-6 Monotonic Stack
+6. Monotonic Stack
     * Two types of stack
             - Increasing -> lower in bottom and keep on increase top
             - Decreasing -> higher in bottom and keep decrease on top
@@ -68,4 +68,20 @@ For Sorting and Searching to find pivot use Math.floor
     * while poping elements from stack store it in map. current element is key of map and value will poppped element from stack
     * To find histogram rectangle we need right most small element than current and left most smaller than current and insert last element as zero
     * To find area of histogram calculate width = rightIdx - leftIdx -1 because actual rectangle lies between rightIdx and leftIdx ending point
+
+7. Modified Binary Search
+  * If mid is greater than or equal to left most element. then left side is cosider as sorter and right is considered as non sorted
+  * check for target with in the range i.e,left most to mid for sorted and mid to right most for un-sorted
+  * problem - https://leetcode.com/problems/search-a-2d-matrix-ii/description/
+    Algo-  For matrix binary search, if array sorted take either top rightmost corner element or bottom leftmost element for begin comparison.
+    For top rightmost, if current element bigger than target move towards left else move downwards till columns becoming less than 0 or rows exceeding matrix boundary(length).
+    Follow opposite if taken bottom leftmost for comparison begin.
+
+
+8. Merge Intervals:
+
+  -  Arrange the intervals in ascending order using the first start of every interval.
+
+Compare first interval end with the next adjacent interval start and if greater. Make sure to have the bigger element among both as end interval.
+If the comparison of first interval end with adjacent interval start fails, add the complete interval in output and iterate for others.
     
